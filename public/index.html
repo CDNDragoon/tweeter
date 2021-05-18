@@ -21,6 +21,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -42,8 +43,8 @@
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <form id="twittform"><label class="pretext" for="twitttext">What are you humming about?</label>
-        <!-- <textarea name="text" id="twitttext"></textarea> -->
+      <form id="twittform"><label class="pretext" for="twitttext">What are you thinking about?</label>
+        <textarea placeholder="Care to share?" name="text" id="twitttext"></textarea>
       <div class="subnewtwitt">
       <button type="submit" method="POST" action="/twitts">Twitt</button>
       <output name="counter" class="counter" for="twitttext">140</output>
