@@ -57,4 +57,15 @@ const renderTweets = function(tweets) {
 
 $(document).ready(function() {
   renderTweets(data)
+  $('#twittform').on('submit', function(event) {
+    event.preventDefault();
+    $.ajax({
+      method: "POST",
+      url: 'http://localhost:8080/tweets',
+      data: $(this).serialize(),
+      success: function() {
+        console.log('tweet successfuly added in database');
+      }
+    })
+  })
 });
