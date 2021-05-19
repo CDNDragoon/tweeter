@@ -10,7 +10,7 @@ article {
   border-width: 2px;
   border-color: black;
   word-wrap: break-word;
-  margin: 0px 5px 0px 5px;
+  margin: 10px 5px 10px 5px;
 }
 
 .twittcontainer header {
@@ -28,6 +28,7 @@ article {
   height: auto;
   align-self: flex-start;
   margin: 6px 10px 16px 10px;
+  background-color: white;
 }
 
 .tweet-body {
