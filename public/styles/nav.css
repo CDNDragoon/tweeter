@@ -6,6 +6,8 @@ nav {
   width: 100%;
   padding: 1.5em;
   z-index: 1;
+  top: 0px;
+  position: sticky;
 }
 
 span {
