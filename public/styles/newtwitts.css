@@ -1,6 +1,8 @@
 #twittform {
   margin-bottom: 5px;
   margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
 } 
 
 .container {
@@ -38,29 +40,27 @@ font-family: "Souce sans pro";
 }
 
 form button {
-  border-radius: 6px;
-  background-color: crimson;
+  background-color: #4056A1;
   color: whitesmoke;
-  box-shadow: rgba(0,0,0,.4) 6px 6px 6px;
   align-self: flex-start;
   margin-top: 12px;
+  font-family: "bungee";
 }
 
 button:active {
   position: relative;
-  left: 5px;
-  top:5px;
+  left: 3px;
+  top: 3px;
   box-shadow: none;
 }
 
 output {
   left: 2px;
-  background-color: green;
-  color: black;
-  box-shadow: rgba(0,0,0,.4) 4px 4px 4px;
-  border-radius: 10px;
+  background-color: transparent;
+  color: grey;
   align-self: flex-end;
   margin-top: 5px;
+  font-family: "bungee";
 }
 
 .twitttext {

@@ -5,7 +5,7 @@ $(document).ready(function() {
     if (remaining >= 0) 
     {$("output").replaceWith(`<output name="counter" class="counter" for="twitttext">${remaining}</output>`)}
     else {
-     $("output").replaceWith(`<output style="background-color: red; color: white;" name="counter" class="counter" for="twitttext">${remaining}</output>`)
+     $("output").replaceWith(`<output style="color: red;" name="counter" class="counter" for="twitttext">${remaining}</output>`)
     }
   })
 });
