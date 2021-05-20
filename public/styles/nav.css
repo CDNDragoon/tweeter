@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #4056A1;
+  background-color: #4056a1;
   height: 120px;
   width: 100%;
   padding: 1.5em;
@@ -11,13 +11,13 @@ nav {
 }
 
 span {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "bungee";
   font-size: 1.5em;
 }
 
 #compose {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   opacity: 90%;
   display: flex;
@@ -34,7 +34,7 @@ span {
 #compose-button {
   display: flex;
   flex-direction: row;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
 }
 

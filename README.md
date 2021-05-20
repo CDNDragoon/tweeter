@@ -6,10 +6,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshot of main page"]
-!["Screenshot of error messsage"]
-!["Screenshot of new tweet"](
-!["Screenshot of adaptive design"]
+!["Screenshot of main page"](https://github.com/CDNDragoon/tweeter/blob/master/screenshots/home%20page.png)
+!["Screenshot of error messsage"](https://github.com/CDNDragoon/tweeter/blob/master/screenshots/error.png)
+!["Screenshot of new tweet"](https://github.com/CDNDragoon/tweeter/blob/master/screenshots/new%20tweet.png)
+!["Screenshot of adaptive design"](https://github.com/CDNDragoon/tweeter/blob/master/screenshots/adaptive%20design.png)
 
 ## Getting Started
 
@@ -22,3 +22,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- body-parser ^1.15.2 or above
+- chance ^1.0.2 or above
+- express ^4.13.4 or above
+- md5 ^2.1.0 or above
+- timeago.js ^4.0.2 or above

@@ -18,7 +18,7 @@ article {
   flex-direction: row;
   display: inline-flex;
   justify-content: space-around;
-  background-color: #4056A1;
+  background-color: #4056a1;
   background-image: none;
   color: white;
 }
@@ -60,7 +60,7 @@ article {
 }
 
 article:hover {
-  box-shadow: rgba(0,0,0,.4) 4px 4px 4px
+  box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px;
 }
 
 article:hover .user-handle {
@@ -78,7 +78,7 @@ article:hover .user-handle {
 
 .fa-thumbs-up {
   margin-left: 5px;
-} 
+}
 
 .fa-recycle {
   margin-left: 5px;
@@ -90,8 +90,8 @@ article:hover .user-handle {
 }
 
 .fa-thumbs-up:hover {
-    color: #4056A1;
-} 
+  color: #4056a1;
+}
 
 .fa-recycle:hover {
   color: green;
@@ -106,7 +106,7 @@ article:hover .user-handle {
   left: 1px;
   top: 1px;
   box-shadow: none;
-} 
+}
 
 .fa-recycle:active {
   position: relative;
