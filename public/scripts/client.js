@@ -1,4 +1,8 @@
-const safeHTML = `<p>${escape(textFromUser)}</p>`;
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 let createTweetElement = function(obj) {
   let htmlUnit = `
@@ -18,11 +22,24 @@ let createTweetElement = function(obj) {
       <div class="user-buttons">
       <i class="far fa-thumbs-up fa-lg"></i>
       <i class="fas fa-recycle fa-lg"></i>
-      <i class="far fa-keyboard fa-lg"></i>
+      <i class="far fa-flag"></i>
     </div>
     </footer>
   </article>`
   return htmlUnit;
+};
+
+const message = function(err) {
+  let mess = "";
+  if (err === "empty") {
+    mess = "Seems like you forgot to put words on the page before posting...nice one."
+  } else {
+    mess = "You have too many characters...great, try again."
+  }
+  const injection = `<div class="message">
+  <i class="fas fa-exclamation-circle"></i>
+  ${mess}<i class="fas fa-exclamation-circle"></i></div>`
+  return injection;
 };
 
 const renderTweets = function(tweets) {
@@ -65,7 +82,11 @@ $(document).ready(function() {
   $('#twittform').on('submit', function(event) {
     event.preventDefault();
      const tweet = $(this).children("textarea").val();
-     if (tweet !== "" && tweet.length <= 140) {
+     if (tweet === "") {
+      $(".warning").html(message("empty")).slideDown(1000).fadeOut(4000)
+     } else if (tweet.length > 140) {
+      $(".warning").html(message("limit")).slideDown(1000).fadeOut(4000)
+     } else {
       const formData = $(this).serialize();
       postTweets(formData);
      }

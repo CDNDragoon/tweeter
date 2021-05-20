@@ -41,3 +41,10 @@ span {
 .fa-angle-double-down {
   color: orange;
 }
+
+@media all and (max-width: 800px) {
+  nav {
+    background-color: #cc8800;
+    background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  }
+}
