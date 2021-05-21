@@ -1,9 +1,13 @@
+
+// function that creates the tree nodes
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+
+// function that is the entire tweet box area
 let createTweetElement = function (obj) {
   let htmlUnit = `
   <article>
@@ -29,6 +33,8 @@ let createTweetElement = function (obj) {
   return htmlUnit;
 };
 
+
+// function that displays an error message for two senarios
 const message = function (err) {
   let mess = "";
   if (err === "empty") {
@@ -43,6 +49,8 @@ const message = function (err) {
   return injection;
 };
 
+
+// function that will render all/new tweets
 const renderTweets = function (tweets) {
   $(".twittcontainer").empty();
   for (let tweet of tweets) {
@@ -51,6 +59,7 @@ const renderTweets = function (tweets) {
   }
 };
 
+// function that will load tweets and say when succesfull 
 const loadTweets = function () {
   let url = "http://localhost:8080/tweets";
   $.ajax({
@@ -64,6 +73,7 @@ const loadTweets = function () {
     .always(() => console.log("as always; this request is completed."));
 };
 
+// function that handles posting of the tweets to the database
 const postTweets = function (formData) {
   $.ajax({
     method: "POST",
@@ -78,6 +88,7 @@ const postTweets = function (formData) {
     .fail(() => console.log("failed to post"));
 };
 
+// function that controls the error message animations 
 $(document).ready(function () {
   loadTweets();
   $("#twittform").on("submit", function (event) {
